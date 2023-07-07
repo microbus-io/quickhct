@@ -22,7 +22,7 @@ import (
 )
 
 func Test_WithTone(t *testing.T) {
-	for _, tone := range []int{0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 95, 98, 100} {
+	for _, tone := range []int{0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 95, 99, 100} {
 		r, g, b := WithTone(0x71, 0x55, 0x73, tone)
 		fmt.Printf("%3d %02x%02x%02x\n", tone, r, g, b)
 	}
